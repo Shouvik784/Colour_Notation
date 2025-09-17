@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Notations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Color Notations</h1>
+    <p style="font-size: 1.2rem; line-height: 1.9; max-width: 800px; margin: 0 auto 50px; text-align: center; color: #555; font-style: normal; letter-spacing: 0.5px; text-transform: none;">
+        <span style="display: inline-block; margin-bottom: 10px; font-size: 1.4rem; color: #3498db; font-weight: 500; letter-spacing: 1px;">
+            A Comprehensive Guide to Color in Web Design
+        </span><br>
+        <span style="font-style: italic; color: #7f8c8d; font-weight: 400;">
+            This interactive guide demonstrates various ways to specify and work with colors in CSS. Hover over the color boxes to see effects and click to copy the color code.
+        </span>
+    </p>
+
+    <section class="color-section named-colors">
+        <h2>1. Named Colors</h2>
+        <p>CSS provides 140+ predefined color names that can be used directly.</p>
+        <div class="color-grid">
+            <div class="color-box" style="background-color: tomato;">tomato</div>
+            <div class="color-box" style="background-color: dodgerblue;">dodgerblue</div>
+            <div class="color-box" style="background-color: mediumseagreen;">mediumseagreen</div>
+            <div class="color-box" style="background-color: slateblue;">slateblue</div>
+            <div class="color-box" style="background-color: darkorange;">darkorange</div>
+        </div>
+    </section>
+
+    <section class="color-section hex-colors">
+        <h2>2. HEX Colors</h2>
+        <p>Hexadecimal notation using #RRGGBB format.</p>
+        <div class="color-grid">
+            <div class="color-box" style="background-color: #e74c3c;">#e74c3c (Red)</div>
+            <div class="color-box" style="background-color: #2ecc71;">#2ecc71 (Green)</div>
+            <div class="color-box" style="background-color: #3498db;">#3498db (Blue)</div>
+            <div class="color-box" style="background-color: #9b59b6;">#9b59b6 (Purple)</div>
+            <div class="color-box" style="background-color: #f1c40f;">#f1c40f (Yellow)</div>
+        </div>
+    </section>
+
+    <section class="color-section rgb-colors">
+        <h2>3. RGB Colors</h2>
+        <p>RGB notation using rgb(red, green, blue) where each value is between 0-255.</p>
+        <div class="color-grid">
+            <div class="color-box" style="background-color: rgb(231, 76, 60);">rgb(231, 76, 60)</div>
+            <div class="color-box" style="background-color: rgb(46, 204, 113);">rgb(46, 204, 113)</div>
+            <div class="color-box" style="background-color: rgb(52, 152, 219);">rgb(52, 152, 219)</div>
+            <div class="color-box" style="background-color: rgb(155, 89, 182);">rgb(155, 89, 182)</div>
+            <div class="color-box" style="background-color: rgb(241, 196, 15);">rgb(241, 196, 15)</div>
+        </div>
+    </section>
+
+    <section class="color-section rgba-colors">
+        <h2>4. RGBA Colors</h2>
+        <p>RGB with Alpha channel for transparency (0 = fully transparent, 1 = fully opaque).</p>
+        <div class="color-grid">
+            <div class="color-box" style="background-color: rgba(231, 76, 60, 0.8);">rgba(231, 76, 60, 0.8)</div>
+            <div class="color-box" style="background-color: rgba(46, 204, 113, 0.6);">rgba(46, 204, 113, 0.6)</div>
+            <div class="color-box" style="background-color: rgba(52, 152, 219, 0.4);">rgba(52, 152, 219, 0.4)</div>
+            <div class="color-box" style="background-color: rgba(155, 89, 182, 0.8);">rgba(155, 89, 182, 0.8)</div>
+            <div class="color-box" style="background-color: rgba(241, 196, 15, 0.6);">rgba(241, 196, 15, 0.6)</div>
+        </div>
+    </section>
+
+    <section class="color-section hsl-colors">
+        <h2>5. HSL Colors</h2>
+        <p>Hue (0-360), Saturation (0%-100%), Lightness (0%-100%).</p>
+        <div class="color-grid">
+            <div class="color-box" style="background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+            <div class="color-box" style="background-color: hsl(120, 100%, 50%);">hsl(120, 100%, 50%)</div>
+            <div class="color-box" style="background-color: hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</div>
+            <div class="color-box" style="background-color: hsl(60, 100%, 50%);">hsl(60, 100%, 50%)</div>
+            <div class="color-box" style="background-color: hsl(300, 100%, 50%);">hsl(300, 100%, 50%)</div>
+        </div>
+    </section>
+
+    <section class="color-section hsla-colors">
+        <h2>6. HSLA Colors</h2>
+        <p>HSL with Alpha channel for transparency (0 = fully transparent, 1 = fully opaque).</p>
+        <div class="color-grid">
+            <div class="color-box" style="background-color: hsla(0, 100%, 50%, 0.7);">hsla(0, 100%, 50%, 0.7)</div>
+            <div class="color-box" style="background-color: hsla(120, 100%, 50%, 0.7);">hsla(120, 100%, 50%, 0.7)</div>
+            <div class="color-box" style="background-color: hsla(240, 100%, 50%, 0.7);">hsla(240, 100%, 50%, 0.7)</div>
+            <div class="color-box" style="background-color: hsla(60, 100%, 50%, 0.7);">hsla(60, 100%, 50%, 0.7)</div>
+            <div class="color-box" style="background-color: hsla(300, 100%, 50%, 0.7);">hsla(300, 100%, 50%, 0.7)</div>
+        </div>
+    </section>
+
+    <section class="color-section" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: -50%; right: -50%; width: 100%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); transform: rotate(30deg); pointer-events: none;"></div>
+        <h2>Color Combinations</h2>
+        <p>This section shows how different color combinations affect readability and aesthetics.</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 25px; margin-top: 30px; position: relative; z-index: 2;">
+            <div style="background: linear-gradient(135deg, #000000 0%, #2c3e50 100%); color: #fff; padding: 25px 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: #fff;"></div>
+                <h3 style="font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-bottom: 12px; color: #fff; text-transform: uppercase; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">High Contrast</h3>
+                <p style="font-size: 1rem; line-height: 1.7; margin: 0; opacity: 0.95; letter-spacing: 0.3px; text-align: left; padding: 0 5px;">Black on white or white on black provides maximum readability and accessibility for all users.</p>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: #f1c40f; padding: 25px 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: #f1c40f;"></div>
+                <h3 style="font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-bottom: 12px; color: #f1c40f; text-transform: uppercase; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">Complementary</h3>
+                <p style="font-size: 1rem; line-height: 1.7; margin: 0; color: #f1c40f; letter-spacing: 0.3px; text-align: left; padding: 0 5px; font-weight: 500;">Colors opposite each other on the color wheel create vibrant contrast and visual interest in your designs.</p>
+            </div>
+            
+            <div style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%); color: #fff; padding: 25px 20px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease; position: relative; overflow: hidden;">
+                <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: #fff;"></div>
+                <h3 style="font-family: 'Roboto Slab', serif; font-size: 1.5rem; margin-bottom: 12px; color: #27ae60; text-transform: uppercase; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">Analogous</h3>
+                <p style="font-size: 1rem; line-height: 1.7; margin: 0; color: #27ae60; letter-spacing: 0.3px; text-align: left; padding: 0 5px; font-weight: 500;">Adjacent colors on the wheel create harmonious, naturally pleasing color schemes with subtle transitions.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; margin: 100px 0 30px; padding: 25px; color: #7f8c8d; font-size: 0.95em; position: relative;">
+        <div style="max-width: 700px; margin: 0 auto; padding: 30px; background: rgba(255,255,255,0.9); border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.5); position: relative; overflow: hidden;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, #3498db, #9b59b6);"></div>
+            <p style="margin: 0 0 10px; font-style: italic; letter-spacing: 0.5px; color: #555;">
+                Experiment with these color notations in your CSS to create beautiful designs!
+            </p>
+            <p style="margin: 0; font-family: 'Dancing Script', cursive; font-size: 1.8em; color: #9b59b6; text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">
+                Happy Styling! 🎨
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const colorBoxes = document.querySelectorAll('.color-box');
+            
+            colorBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    const textToCopy = this.textContent.trim();
+                    navigator.clipboard.writeText(textToCopy)
+                        .then(() => {
+                            const originalText = this.textContent;
+                            this.textContent = 'Copied!';
+                            this.style.fontWeight = '700';
+                            setTimeout(() => {
+                                this.innerHTML = originalText;
+                                this.style.fontWeight = '600';
+                            }, 1500);
+                        })
+                        .catch(err => {
+                            console.error('Failed to copy text: ', err);
+                        });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
